@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!--
+        - Metadata (meta element) is the data that describes data.
+        - i.e. we use below utf-8, this means that we can display a lot of characters of different
+          languages, english, japanese, russian and so on.
+        - If we change the utf-8 to iso-8859-1, then, our japanese characters will be all messed up.
+    -->
+
+    <!--
+        - Another 2(meta elements) the name of the author and the concise description of the page.
+        - name attribute(specifies the type of meta element)
+        - content attribute(specifies the actual meta content)
+        - Travelling around the web we can find a lot of metadata types, it is depending.
+    -->
+    <meta name="author" content="rigan">
+    <!--
+        - Specifying the author we can contact them with questions about content or something else.
+      -->
+    <meta name="description" content="Fundamental explaning of the head element">
+    <!--
+        - Specifying a description that includes keywords relating to the content it is useful for
+            searching engines, or just SEO.
+      -->
+
+    <title>&lt;title&gt; element</title>
+    <!--
+        - (title element) metadata that represent the title of the overall HTML document.
+        - It is also used in the search results.
+      -->
+    <link rel="shortcut icon" href="smile.png" type="image/png">
+    <!--
+        - We can also add the custom favicon for our page.
+        - It is recommended to use the .ico format for older Internet Explorer.
+        - Also, you should use the 16x16 size, do not forget about icon size.
+        - We can also use a lot of other icon types, depending what kind of device we talk about.
+      -->
+    <link rel="stylesheet" href="styles.css">
+    <!--
+        The link to the css file(Cascading Style Sheets - styling our html page)
+      -->
   </head>
   <body>
+    <h1>&lt;h1&gt; element</h1>
+    <!--
+      - (h1 element) generally should be used once per page.
+      - We can use h1 for the title of our page content, story title, or news headline.
+    -->
 
+    <p>Japanese language: <span lang="jp"> ご飯が熱い </span></p>
+    <!--
+        - Japanese characters are displayed just because of utf-8 value of charset attribute of
+          meta element, so simple)).
+        - We used also the lang attribute with the value of jp(japanese) which will be nice for SEO.
+    -->
+    <script src="scripting.js"></script>
+    <!--
+        - It is recommended to put our script element just before the closing body tag to make sure
+            that the html content has been read by the browser, if not, we can have some errors
+              when javascript will try to get an element that doesn't yet exist.
+      -->
   </body>
 </html>

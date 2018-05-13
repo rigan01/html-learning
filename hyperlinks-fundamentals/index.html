@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="rigan">
+    <meta name="description" content="Learning hyperlinks fundamentals from MDN website.">
+    <link rel="shortcut icon" href="rain.png">
+    <title>Hyperlinks Fundamentals</title>
+
+  </head>
+  <body>
+    <!-- Assigning an id -->
+    <p id="up"><a href="#down">Go down</a></p>
+
+    <!--
+        - Hyperlinks allow us to link our documents to other document, we can also link to specific
+            part of the document.
+        - When we click the link, our browser go to another web address(URL).
+    -->
+    <p>I'm creating a link to my github account,
+      <a href="https://github.com/rigan01" title="Go to Rigan's github account.">click here</a>.
+    </p>
+    <!--
+        - href attribute is also known as a ''Hypertext Reference'' or ''target'', he'll contain the
+            web address.
+        - also, we added some aditional information about our link with ''title'' attribute,
+            so when the link is hovered over thef title will come up as a tooltip.
+     -->
+
+     <!--
+          - We can turn just about any content into a link, even block level elements.
+          - For example an image:
+      -->
+      <a href="https://www.github.com">
+        <img src="github-logo.png" title="Github logo that links to github homepage.">
+      </a>
+
+      <p><b>An URL is Uniform Resource Locator, is just a string of text that define where is
+          something located on the Web. For example github is located a</b> https://www.github.com.</p>
+
+      <hr>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <hr>
+
+      <p><b>It is possible to link to a specific parts, this function is known as a document
+        fragment.So for that we have to assign a specific id to the element that we want to link to.
+      </b></p>
+      <!-- Assigning an id -->
+      <p id="down"><a href="#up">Go up</a></p>
+
+      <hr>
+
+      <!--
+          - Absolute and Relative URL's.
+          - An absolute URL will points to a location by its absolute
+              location on the web http://www.example.com/projects/index.html
+          - A relative URL will points to a location that is relative to the file you are
+              linking from.For example to link to a pdf file: pdfs/project-brief.pdf,
+                the same address in absolute URL will be:
+                    http://www.example.com/projects/pdfs/project-brief.pdf
+      -->
+
+      <!--
+          - Best practices to creating links:
+            1.Use clear link wording
+              a.include keyword in your link to effectively describe what is
+                being linked to (important for SEO).
+              b.screenreader user like jumping from link to link on the page, and reading links
+                out of context.
+              c.visual readers also will find descriptive links very useful.
+            2.Don't use 'link' or 'links to', screen readers and visual readers knows
+              that this is a link.
+            3.Keep your link label as short as possible.
+            4.Don't use the same text for multiple links, i.e. 'click here', 'click here'.
+      -->
+      <p>A good link:</p>
+      <p><a href="https://www.github.com">Github Homepage</a><p>
+      <p>A bad link:</p>
+      <p>To open github homepage, <a href="https://www.github.com">click here</a>.<p>
+
+      <hr>
+
+      <!--
+          - Use a relative links wherever possible
+          - When you link to other locations in the same
+            website, and you should use absolute links when you link to other website.
+          - Relative links are shorter, wich makes they easier to read when we're working with code.
+          - And finally, putting absolute URL insead of relative one, you force your browser to do
+            extra work.(finding the DNS, then go to the server and finding that file)
+      -->
+      <!--
+          - When we're linking to a non-html resources, we have to leave clear signposts,
+            they should be informative.
+      -->
+      <p>
+        <a href="https://www.financial-report.comooo">
+          Download the financial report (PDF, 3MB)
+        </a>
+      </p>
+      <p>
+        <a href="https://www.playthisgame34342324.com">
+          Play the action game (requires Flash)
+        </a>
+      </p>
+      <!-- Use the download attribute to provide a default download name -->
+      <p><a href="github-logo.png" download="Github-logo">Download Github logo</a></p>
+      <hr>
+
+      <!-- - To send an email we're using the mailto: , this action will
+                open our email client for writing the letter.
+      -->
+      <a href="mailto:rigan34234231222121@mozilla.org">Send email to rigan</a>
+      <!-- We can also specifying details: -->
+      <a href="mailto:rigan34234231222121@mozilla.org?cc=name2@constructions123.com&bcc=name3@construction123.com&subject=The%20subject%20of%20the%20email%20body=The%20body%20of%20the%20email">
+        Send email to rigan</a>
+  </body>
+</html>

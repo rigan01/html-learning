@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="rigan">
+    <meta name="description" content="Learning text fundamentals from MDN website.">
+    <link rel="shortcut icon" href="rain.png">
+    <title>Text Fundamentals</title>
+
+  </head>
+  <body>
+    <h1>Ocean</h1>
+    <!--
+        - We can use h1, h2, h3, h4, h5, h6 tags for headings.
+        - It is recomended to use h1 once per page for title, and then h2, and h3, and so on.
+        - It is most important to use h1 instead of styling titles or some relevant data,
+            because of search engines and screen readers, they will read h1 as an important information.
+    -->
+    <p>An ocean (from Ancient Greek Ὠκεανός, transc. Okeanós, the sea of classical antiquity) is a body of saline water that composes much of a planet's hydrosphere.</p>
+    <!-- - Each paragraph has to be wrapped in a (p element) -->
+    <p>On Earth, an ocean is one of the major conventional divisions of the World Ocean. These are, in descending order by area, the Pacific, Atlantic, Indian, Southern</p>
+    <p>(Antarctic), and Arctic Oceans.The word sea is often used interchangeably with "ocean" in American English but, strictly speaking, a sea is a body of saline</p>
+    <p>water (generally a division of the world ocean) partly or fully enclosed by land.</p>
+
+    <h2>Etymology</h2>
+    <!--
+        - We have to implement structural hierarchy for our headings.
+        - i.e. a book: title of the story (h1), title of the chapter(h2), sub-sections
+            of each chapter(h3), and so on.
+    -->
+    <p>The word « ocean » comes from the figure in classical antiquity, Oceanus (/oʊˈsiːənəs/; Greek: Ὠκεανός Ōkeanós, pronounced [ɔːkeanós]), the elder of the Titans in classical</p>
+    <p>Greek mythology, believed by the ancient Greeks and Romans to be the divine personification of the sea, an enormous river encircling the world.</p>
+    <p>The concept of Ōkeanós has an Indo-European connection. Greek Ōkeanós has been compared to the Vedic epithet ā-śáyāna-, predicated of the dragon Vṛtra-, who captured the cows/rivers.</p>
+    <p>Related to this notion, the Okeanos is represented with a dragon-tail on some early Greek vases.</p>
+
+    <h2>Earth's global ocean</h2>
+    <h3>Oceaninc division</h3>
+    <p>Though generally described as several separate oceans, the global, interconnected body of salt water is sometimes referred to as the World Ocean or global ocean.</p>
+    <p>The concept of a continuous body of water with relatively free interchange among its parts is of fundamental importance to oceanography.</p>
+
+    <!--
+        Lists
+        - We are using lists everywhere, and in html we have 3 types of lists:
+          1.Unordered lists
+          2.Ordered lists
+          3.Nesting lists
+      -->
+      <!-- Unordered list (When order doesn't matter!)-->
+      <ul>
+        <li>Milk</li>
+        <li>Tomatoes</li>
+        <li>Bananas</li>
+        <li>Chocolate</li>
+        <li>Meat</li>
+      </ul>
+      <!-- Ordered list (When order matter!) -->
+      <ol>
+        <li>Wakeup.</li>
+        <li>The breakfast.</li>
+        <li>The lunch.</li>
+        <li>The dinner.</li>
+        <li>Go to bed again.</li>
+      </ol>
+      <!-- Nested list (For some reasons, we can use nested lists! ) -->
+      <ul>
+        <li>Play Game</li>
+        <li>Move forward</li>
+        <li>Move left</li>
+        <li>Attack</li>
+        <li>You are dead</li>
+        <li>Game Over</li>
+        <ul>
+          <li>Play Again</li>
+          <li>Quit</li>
+        </ul>
+      </ul>
+
+      <!-- Emphasis and importance -->
+
+      <!--
+          - If you want to just mark text as a italic one:
+          - i element is used for foreign words, taxonomic destination, technical terms,
+              a thought, etc.
+        -->
+      <p>I know <i>this is not</i> my cup of tea.</p>
+
+      <!--
+          - But when we want to mark up some instances, we can use (em - emphasis element),
+            this is important, because after that, screen readers will read this chunk of Text
+              with different tone of voice.
+-->
+      <p>I am <em>not</em> glad to see you.</p>
+      <!--
+          - Screen reader will read ,,not'' with different tone of voice.
+      -->
+
+      <!--
+          - For strong importance we use (strong element - to mark up some instances),
+            and (b element - to just make text bold)
+          - b element is used for key words, product names, lead sentences, etc.
+      -->
+      <p>Smoking is <b>very</b> negative habbit.</p>
+      <p>If you want to live more, just - <strong>don't smoking</strong>.  </p>
+
+      <!-- We can use (u element - wich means undelined) -->
+      <p>I try to <u>speaak</u> better.</p>
+      </body>
+</html>

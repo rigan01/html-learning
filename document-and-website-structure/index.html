@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="rigan">
+    <meta name="description" content="Learning document and website structure.">
+    <link rel="stylesheet" href="style.css">
+    <title>Document and website structure</title>
+
+  </head>
+  <body>
+    <h1>Document and website structure</h1>
+    <!--
+        - Usualy the basic section of a document is the header, navigation bar, main content, sidebar and
+            footer.
+
+            header - <header>
+            navigation bar - <nav>
+            main content - <main> (with various content subsections like - <article>, <section>,
+              and <div> elements)
+            sidebar - <aside> (often placed inside <main>)
+            footer - <footer>
+
+        - Those elements are also important for people with disabilities.
+     -->
+     <h2>The main definitions that we have to understand:</h2>
+     <dl>
+      <dt>&ltmain&gt</dt>
+        <dd>To use once per page, do not nested within other elements, is for content unique to
+          this page.</dd>
+      <dt>&ltarticle&gt</dt>
+        <dd>For example a single blog post.</dd>
+      <dt>&ltsection&gt</dt>
+        <dd>It is similar to article element, but it is more for grouping together a single part
+          of the page that constitue a single piece of functionality(i.e. a mini map, or a set of
+            article headlines and summaries).It is recommending to begin each section with a
+              heading.</dd>
+      <dt>&ltaside&gt</dt>
+        <dd>Content that is not directly related to the main content(author biography, related
+            links, etc.).</dd>
+      <dt>&ltheader&gt</dt>
+        <dd>It can be the child of the body(global header of the page), or the child of the section
+          and article(specific header for that section).</dd>
+      <dt>&ltnav&gt</dt>
+        <dd>Represent the main navigation functionality for the page.</dd>
+      <dt>&ltfooter&gt</dt>
+        <dd>Represent of end content for the page.</dd>
+     </dl>
+
+     <hr>
+
+     <h2>Non-semantic wrappers</h2>
+     <!-- non-semantic meaning that this kind of elements do not define its content -->
+     <p>
+       When we need to just grouping a set of elements together, then we can use the
+       <code>&ltdiv&gt</code>
+       and <code>&ltspan&gt</code> elements that is preferable to use these with a suitable
+       <code>class</code> attribute.
+    </p>
+
+    <hr>
+
+    <h2>SPAN element</h2>
+    <p>Span is a inline non-semantic element, use the <span class="color">span</span> element only
+      if can't think of a better semmantic text element to wrap your content.For example, in this case
+      span element is used to just provide a class to put the red color for the text wrapped in.</p>
+    <h2>DIV element</h2>
+    <p>Div element is a non-semantic block level element, which you should use only if you can't
+      think of a better semmantic block element to use.Take care with divs, it's easy to use
+      them too much, and after that you will have hard time to updating and maintaining your
+      documents.</p>
+
+    <hr>
+
+    <h2>Line breaks and horizontal rules</h2>
+
+  </body>
+</html>

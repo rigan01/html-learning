@@ -9,6 +9,9 @@
   </head>
   <body>
     <h1>Advanced text formating</h1>
+
+    <hr>
+
     <h2>Description lists</h2>
 
     <!-- Creating a list with termens and definitions: -->
@@ -22,9 +25,11 @@
       <dt>Javascript</dt>
       <dd>A high level interpreted programming language.It is a language which is also charachterized
         as dynamic, weakly typed, prototype-based and multi-paradigm.</dd>
-    </dl>
+      </dl>
 
-      <!-- Creating quatations -->
+      <hr>
+
+      <h2>Quatations</h2>
       <!--
           -If a section of block level content is quoted from somewhere else, you should
             wrap it inside blockquote tags.
@@ -52,9 +57,70 @@
       <!-- citations ?????????????????????????? -->
       <!-- citations ?????????????????????????? -->
 
+      <hr>
 
+      <h2>Abbreviations</h2>
+      <!--
+          - We can use abbr element to explain what this abbreviation means.
+      -->
+      <p>With <abbr title="Hyper Text Markup Language">html</abbr> we can create web pages.</p>
 
+      <hr>
 
+      <h2>Marking up contact details</h2>
+      <!--
+          - If you want to leave your contact details (in this case only if you wrote
+              the code, since (address element) is special for contacting the person that wrote
+                the code, then you'll write something like that: )
+      -->
+      <address>
+        <p>Rigan, Portugal, Algarve.</p>
+      </address>
+
+      <hr>
+
+      <h2>The superscript and subscript</h2>
+
+      <h3>Superscript</h3>
+      <p>My birthday is on June 4<sup>th</sup>.</p>
+
+      <h3>Subscript</h3>
+      <p>The chemical formulae is H<sub>2</sub>O.</p>
+
+      <hr>
+
+      <h2>Representing computer code</h2>
+      <!--
+          - pre element is special for displaying the hole text with white spaces, and the
+              code element is special for displaying the text wrapped in as a computer code.
+      -->
+      <h3>Computer code and displaying white spaces</h3>
+      <pre><code>
+        var para = document.querrySelector('p');
+
+        console.log(para + ' - it is a paragraph!');
+          alert(para + '- it is a paragraph!');
+      </code></pre>
+
+      <h3>Marking the variables</h3>
+      <p>The <var>para</var> is a variable that target a paragraph.</p>
+
+      <h3>Keyboard input</h3>
+      <p>Well buddy, if you want to open the terminal, then click <kbd>CTRL</kbd>
+        + <kbd>ALT</kbd> + <kbd>T</kbd> , that's it.</p>
+
+      <hr>
+
+      <h2>Marking up times and dates</h2>
+      <!--
+          - We can write the machine-readable time and dates format:
+          - We have a lot of options to set the value of the attribute datetime.
+          - The datetime attribute is important because of options to write the time,
+              you can write time in anyway, but if you want to make readable your time
+                for computer reading machines, you should set the time element and give them
+                  the datetime attribute with a value that represent the time.
+      -->
+      <p>Today is  <time datetime="2018-05-13">13 May 2018</time>.</p>
 
   </body>
 </html>

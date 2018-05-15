@@ -8,6 +8,8 @@ index-mdn-example.html, style-mdn-example.css, script-mdn-example.js - **The exa
 
 active-learning(folders) - **Some practice from MDN**
 
+assessment(folders) - **Some assessments from amazing MDN**
+
 index-rigan.html, style-rigan.css, script-rigan.js - **My code (Trying to write some code after learning new stuff)**
 
 Have a nice day!

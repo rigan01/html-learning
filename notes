@@ -6,7 +6,10 @@
   3. understand the Citations (advanced text fundamentals).
   4. understand the cite attribute (active learning).
   5. learning Debugging Html(Introduction to html).
-
+  6. I can't display captions in the video with WebVTT (Displaying video text tracks)
+      Video and audio content
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content
+  7.
 
 
 
@@ -26,4 +29,5 @@
     outline algorithm.
   2. see aspect ratio
   3. reading the article The Trials and Tribulations of the Title Attribute by Scott O’Hara
-  4. 
+  4. Watching later - Media formats for HTML audio and video
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats

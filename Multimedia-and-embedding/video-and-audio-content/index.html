@@ -5,13 +5,67 @@
     <title>Images in HTML</title>
   </head>
   <body>
-    <h1>Audio and Video content</h1>
-      <!-- adding video, adding the interface of the video with (controls attribute and same value) -->
-      <video src="rabbit320.mp4" controls="controls">
+      <h1 align="center">Audio and Video content</h1>
+
+      <!-- adding video, adding the interface of the video with (controls attribute) -->
+      <video src="rabbit320.mp4" controls poster="rabbit.jpg" width="470" height="470">
         <!-- a fullback content(wich means this content will be displayed if the browser accessing
           the page doesn't support the video element.) -->
         <p>Your browser doesn't support HTML5 video.Here is a <a href="rabbit320.mp4">link
           to the video</a> instead.</p>
       </video>
+
+      <br>                          <!-- White space -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr width="50%">              <!-- White space -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>                          <!-- White space -->
+
+      <!-- We have to put multiple formats of video because not all versions of browsers can read
+        mp4 for example -->
+
+      <video controls width="400" height="300" autoplay loop muted>
+        <!-- including type attribute is important because of speed -->
+        <source src="rabbit320.mp4" type="video/mp4"> <!-- mp4 format --->
+        <source src="rabbit320.webm" type="video/webm"> <!-- webm format --->
+        <p>Your browser doesn't support HTML5 video.Here is a <a href="rabbit320.mp4">link
+          to the video</a> instead.</p>
+      </video>
+
+      <hr width="50%">
+
+      <h2 align="center">The Audio element</h2>
+
+      <!-- Creating an audio player and playing music -->
+      <audio controls>
+        <source src="viper.mp3" type="audio/mp3">
+        <source src="viper.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio.Here is a <a href="viper.mp3">link
+          to the audio</a> instead.</p>
+      </audio>
+
+      <h2 align="center">Displaying video text tracks</h2>
+      <p>With html5 we can write down spoken words as text for people with impairments and
+        other kind of situations, we can do this with WebVTT format and <code>&lttrack&gt</code>
+        element.</p>
+      <!-- subtitles:(translations of foreign material for people who don't understand the language),
+      captions:(synchronized transcriptions of dialog or descriptions of significant sounds to let
+      people who can't hear the audio to understand it.), timed descriptions(text for conversion into
+      audio to serve people with visual impairments)-->
+      <video controls width="400" height="300" loop>
+        <!-- including type attribute is important because of speed -->
+        <source src="rabbit320.mp4" type="video/mp4"> <!-- mp4 format --->
+        <source src="rabbit320.webm" type="video/webm"> <!-- webm format --->
+        <track kind="captions" src="text.vtt" srclang="en">
+        <p>Your browser doesn't support HTML5 video.Here is a <a href="rabbit320.mp4">link
+          to the video</a> instead.</p>
+      </video>
+
   </body>
 </html>

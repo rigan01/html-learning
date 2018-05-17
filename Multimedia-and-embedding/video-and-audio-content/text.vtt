@@ -1,5 +1,11 @@
-WEBVTT - The captions of a rabbit.
+WEBVTT
 
 1
-00:01.000 --> 00:05.000
+00:01.000 --> 00:03.000
 It is the first caption.
+
+2
+00:04.000 --> 00:07.000
+It is the second caption.
+
+NOTE It is a comment!
